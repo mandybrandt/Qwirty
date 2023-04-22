@@ -1,4 +1,6 @@
-
+/* Set the .categories nav to display:flex.
+Prevent it from growing or shrinking, set flex basis to 256.
+Set the display to flex and as a column. */
 nav.categories {
     flex: 0 0 256px;
     display: flex;
@@ -10,6 +12,7 @@ nav.categories {
     margin-left:30px;
     
 }
+/* styling the anchor tags */
 nav.categories a {
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
@@ -22,6 +25,7 @@ nav.categories a {
     padding:20px;
 
 }
+/* make buttons look different when hovering over */
 nav.categories a:hover {
     background-color: darkblue;
     color:yellow;

@@ -1,3 +1,5 @@
+/* set display to flex and flex in a row. Added background color,
+padding, and font-family. */
 footer {
     display: flex;
     flex-direction: row;
@@ -7,6 +9,8 @@ footer {
     justify-content: center;
 
 }
+/* Give breathing room by giving a margin-right, but clearing the margin on the last-child.
+Set diplay to flex in a column. */
 section a {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,9 @@ section a {
 section a :last-child {
     margin-right: none;
 }
+/* Make it white, give it a bottom border.
+Give bottom-border some padding and margin to make it look like its floating.  
+Set a smaller font-size.  Explore letter-spacing property. */
 section h2 {
     display: flex;
     color: white;
@@ -31,7 +38,15 @@ section h2 {
     font-size: 25px; 
     letter-spacing: 4px; 
 }
+/* style a tags */
+section a {
+    text: white, bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
 section a:hover {
     text-decoration: underline white;
-    border-bottom: 1px;
+    border-bottom: 1px, solid white;
+    margin-bottom: 4px;
+    
 }

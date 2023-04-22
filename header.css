@@ -1,0 +1,127 @@
+/* set main-nav and sub-nav to flex. 
+Give the main a dark background and set justify-content to space between.
+ */
+header nav.main-nav {
+    display: flex;
+    background-color: #44b;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav.main-nav li a {
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+/* For nav-list class, set display to flex and direction to row. */
+nav ul.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+ 
+}
+/*give the anchor tags inside some padding and a border-right.  */
+nav ul.nav-list a {
+    display: flex;
+    padding: 10px;
+    border-right: 2px solid white;
+    text-decoration: none;
+}
+/* Remove the border-right on the last tag. */
+.nav-list li:last-of-type a {
+    border-right: none;
+}
+/* display none */
+nav ul.full-width {
+    display: none;
+    list-style: none;
+}
+/* display flex */
+nav ul.short-width {
+    display: flex;
+    list-style: none;
+}
+nav.sub-nav {
+    display: flex;
+    font-size: 20px;
+    padding:5px;
+    margin-top:10px;
+}
+/* The search form should grow to full width and should have a display of flex. */
+nav form.search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding:5px; 
+    flex-grow:1;     
+}
+/* Give the input and button some styling.  
+Add padding, remove borders, and give the input a border-bottom equal in color to our color scheme.
+Have the input flex-grow so that the search box is the largest part of the form. */
+nav form.search-form input {
+    display: flex;
+    align-self: center;
+    padding:10px;
+    font-size:20px;
+    flex: 1 1 700px;
+    border: none;
+    border-bottom: 2px #44b solid; 
+}
+nav form.search-form button {
+    display: flex;
+    color: white;
+    background-color: #44b;
+    align-items: center;
+    padding:5px;
+    flex: 0 1 50px;
+    border: none;
+}
+form button i.material-icons {
+    display: flex;
+    flex: 0 1 40px;   
+}
+nav.sub-nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    background: red;
+    flex: 0 1 350px;
+    align-items: center;
+    justify-content: center;
+}
+/* Style the company name and credit-offer. */
+nav.sub-nav a.credit-offer {
+    display: flex;
+    font-size:25px;
+    text-decoration: none;
+    align-self: center;
+    padding: 10px;  
+}
+nav.sub-nav span.company-name {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 1 400px;
+    padding-left: 70px;
+    color:#44b;
+    margin-right: 100px;
+    font-size: 50px;
+    font-weight: bold;
+}
+/* add a media query when min-width is over 768px and switch the display properties.
+This will show the menu icon when the screen is narrow. */
+@media(min-width:768px) { 
+    .main-nav ul.full-width {
+        display: flex;
+    }
+    .main-nav ul.short-width {
+        display: none;
+    }
+}
+@media(max-width: 1030px){
+    nav.sub-nav {
+        display:inline-block;
+        justify-items: center;
+    }
+}
